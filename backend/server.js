@@ -11,7 +11,7 @@ app.use(express.json());
 
 console.log("ENV:", process.env.MONGO_URI);
 
-// ✅ test route
+// test route
 app.get("/", (req, res) => {
   res.send("✅ Task Manager API running");
 });
@@ -22,4 +22,5 @@ mongoose.connect(process.env.MONGO_URI)
 
 app.use("/tasks", require("./routes/tasks"));
 
-app.listen(3000, () => console.log("Server running on port 3000"));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
