@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #e0f2fe);
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #0f172a;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+}
+
+.header p {
+  opacity: 0.7;
+  margin-top: 6px;
+}
+
+/* APP CARD */
+.app {
+  max-width: 640px;
+  margin: auto;
+  background: white;
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+}
+
+/* INPUT */
+.input-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+input {
+  flex: 1;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+/* BUTTON */
+button {
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  color: white;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(99,102,241,0.35);
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.filter {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.filter.active {
+  background: #0f172a;
+  color: white;
+}
+
+/* TASK LIST */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.task {
+  background: #f8fafc;
+  padding: 14px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+}
+
+.task.done span {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* TASK ACTION BUTTONS */
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-actions button {
+  background: #e2e8f0;
+  color: #0f172a;
+  padding: 8px 10px;
+}
+
+.task-actions button:hover {
+  background: #cbd5f1;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #6366f1;
+  font-weight: 600;
+}
